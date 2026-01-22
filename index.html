@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GameZone - Play Mad Gunz, MineFun & More!</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Exo+2:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <i class="fas fa-gamepad"></i> <span>GameZone</span>
+            </a>
+            <div class="nav-menu">
+                <a href="#" class="nav-link active"><i class="fas fa-home"></i> Home</a>
+                <a href="#games" class="nav-link"><i class="fas fa-dice"></i> All Games</a>
+                <a href="#trending" class="nav-link"><i class="fas fa-fire"></i> Trending</a>
+                <a href="#categories" class="nav-link"><i class="fas fa-tags"></i> Categories</a>
+                <div class="search-box">
+                    <input type="text" id="searchInput" placeholder="Search games...">
+                    <button id="searchBtn"><i class="fas fa-search"></i></button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>PLAY <span class="highlight">MAD GUNZ</span>, MINEFUN & 100+ GAMES</h1>
+            <p>Free online gaming portal with the best shooter, survival, and strategy games</p>
+            <button class="cta-btn" onclick="scrollToGames()">
+                PLAY NOW <i class="fas fa-arrow-down"></i>
+            </button>
+        </div>
+        <div class="hero-stats">
+            <div class="stat">
+                <h3>150+</h3>
+                <p>Free Games</p>
+            </div>
+            <div class="stat">
+                <h3>24/7</h3>
+                <p>Available</p>
+            </div>
+            <div class="stat">
+                <h3>No Ads</h3>
+                <p>Clean Experience</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Games -->
+    <section class="featured-games" id="games">
+        <h2 class="section-title">FEATURED GAMES</h2>
+        <div class="games-container" id="gamesContainer">
+            <!-- Games will be loaded dynamically by JavaScript -->
+        </div>
+    </section>
+
+    <!-- Game Categories -->
+    <section class="categories" id="categories">
+        <h2 class="section-title">POPULAR CATEGORIES</h2>
+        <div class="categories-grid">
+            <div class="category-card" data-category="shooter">
+                <i class="fas fa-gun"></i>
+                <h3>Shooter</h3>
+                <p>12 Games</p>
+            </div>
+            <div class="category-card" data-category="survival">
+                <i class="fas fa-campground"></i>
+                <h3>Survival</h3>
+                <p>8 Games</p>
+            </div>
+            <div class="category-card" data-category="strategy">
+                <i class="fas fa-chess"></i>
+                <h3>Strategy</h3>
+                <p>15 Games</p>
+            </div>
+            <div class="category-card" data-category="action">
+                <i class="fas fa-running"></i>
+                <h3>Action</h3>
+                <p>20 Games</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Game Embed Section -->
+    <section class="game-embed-section">
+        <div class="embed-header">
+            <h2 id="currentGameTitle">Select a Game to Play</h2>
+            <div class="game-controls">
+                <button id="fullscreenBtn"><i class="fas fa-expand"></i> Fullscreen</button>
+                <button id="reloadBtn"><i class="fas fa-redo"></i> Reload</button>
+            </div>
+        </div>
+        <div class="embed-container">
+            <iframe id="gameFrame" src="" title="Game Player" allowfullscreen></iframe>
+            <div class="embed-placeholder" id="embedPlaceholder">
+                <i class="fas fa-gamepad"></i>
+                <h3>No Game Selected</h3>
+                <p>Click on any game card above to start playing!</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3><i class="fas fa-gamepad"></i> GameZone</h3>
+                <p>Your ultimate destination for free online gaming. Play the best web games without downloads.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Legal Notice</h3>
+                <p>All games are property of their respective owners. This site is a fan portal. Contact for removal requests.</p>
+                <p><strong>Important:</strong> You must obtain permission from game developers before featuring their games publicly.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <a href="#">Home</a>
+                <a href="#games">All Games</a>
+                <a href="#trending">Trending</a>
+                <a href="#categories">Categories</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 GameZone. Made for educational purposes.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
