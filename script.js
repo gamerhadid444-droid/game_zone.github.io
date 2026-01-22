@@ -21,7 +21,7 @@ const games = [
         rating: 4.9,
         color: "#9900ff",
         icon: "fas fa-gun",
-        embedUrl: "" // Leave empty or use official web version if available
+        embedUrl: "https://playhop.com/app/419813?utm_source=app_page" 
     },
     {
         id: 3,
